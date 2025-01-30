@@ -1,0 +1,12 @@
+.common-input {
+  background-color: var(--gray1) !important;
+  border-radius: 6px;
+  padding: 16px;
+  height: 54px;
+  width: 100%;
+  
+  &::placeholder {
+    color: var(--grays-placeholder);
+    font-weight: 700;
+  }
+}
