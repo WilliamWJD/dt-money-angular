@@ -1,8 +1,25 @@
 <header>
   <div class="content">
     <div class="sub-header">
-      <img src="assets/logo.png" alt="logo">
-      <app-button [title]="'Nova transação'"/>
+      <img src="assets/logo.png" alt="logo" />
+      <app-button [title]="'Nova transação'" />
+    </div>
+    <div class="operations">
+      <app-operation
+        [title]="'Entradas'"
+        [icon]="'assets/income.png'"
+        [balance]="'R$ 17.400,00'"
+      />
+      <app-operation
+        [title]="'Saídas'"
+        [icon]="'assets/outcome.png'"
+        [balance]="'R$ 1.259,00'"
+      />
+      <app-operation
+        [title]="'Total'"
+        [icon]="'assets/balance.png'"
+        [balance]="'R$ 16.141,00'"
+      />
     </div>
   </div>
 </header>

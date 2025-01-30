@@ -12,16 +12,21 @@ header{
     width: 100%;
     margin: 0 auto;
     height: 212px;
-    border: 1px solid red;
     position: absolute;
     top: 20%;
-    left: 20%;
 
     .sub-header{
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .operations{
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px;
+      gap: 2rem;
     }
   }
 }
