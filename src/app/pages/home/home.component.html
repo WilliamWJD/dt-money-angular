@@ -1,8 +1,31 @@
 <main>
   <div class="content">
+    <!--Box Seacrh-->
     <div class="box-search">
-      <app-input style="flex-grow: 1;"/>
-      <app-button [title]="'Buscar'" [variant]="true" [icon]="'assets/search.png'"/>
+      <app-input style="flex-grow: 1" />
+      <app-button
+        [title]="'Buscar'"
+        [variant]="true"
+        [icon]="'assets/search.png'"
+      />
     </div>
+    <!--Box Seacrh-->
+
+    <!--Transactions-->
+    <div class="transaction-container">
+      <table class="transaction-table">
+        <tbody>
+          @for (transaction of transactions; track $index) {
+          <tr>
+            <td width="50%">{{transaction.description}}</td>
+            <td>{{transaction.value | currency: 'BRL':'symbol':'1.2-2'}}</td>
+            <td>{{transaction.category}}</td>
+            <td>{{transaction.date | date:'dd/MM/yyyy'}}</td>
+          </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    <!--Transactions-->
   </div>
 </main>

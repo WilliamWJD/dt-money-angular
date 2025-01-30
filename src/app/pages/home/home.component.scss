@@ -19,5 +19,35 @@ main{
       justify-content: space-between;
       gap: 1rem;
     }
+
+    .transaction-container{
+      width: 100%;
+      max-width: 1120px;
+      margin: 1.75rem auto 0;
+      // padding: 0 1.5rem;
+
+      .transaction-table{
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 0.5rem;
+        margin-top: 1.5rem;
+
+        td {
+          padding: 1.25rem 2rem;
+          background: var(--gray3);
+          color:var(--grays-texto-base);
+
+          &:first-child {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+          }
+
+          &:last-child {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+          }
+        }
+      }
+    }
   }
 }

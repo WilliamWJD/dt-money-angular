@@ -1,0 +1,28 @@
+{
+  "transactions":[
+    {
+      "id": 1,
+      "description": "Desenvolvimento de Site",
+      "value": 2000,
+      "category": "Freela",
+      "date": "2021-02-10",
+      "type": "income"
+    },
+    {
+      "id": 2,
+      "description": "Parcela da Faculdade",
+      "value": 850,
+      "category": "Estudos",
+      "date": "2021-02-10",
+      "type": "outcome"
+    },
+    {
+      "id": 3,
+      "description": "Formatação de PC",
+      "value": 180,
+      "category": "Freela",
+      "date": "2021-02-10",
+      "type": "income"
+    }
+  ]
+}
