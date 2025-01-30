@@ -6,6 +6,18 @@ $prefix: "mo-";
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// Estilos globais do site
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+// Variáveis de cores
+// ==================
+// Cores do produto
 :root {
   --green-dark: #015F43;
   --green: #00875F;
