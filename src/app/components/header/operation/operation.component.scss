@@ -1,0 +1,28 @@
+.operation{
+  width: 352px;
+  height: 137px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  background-color: var(--gray4);
+  border-radius: 6px;
+  padding: 24px 32px;
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+
+    span{
+      font-size: 1rem;
+      color: var(--grays-texto-base);
+    }
+  }
+
+  h1{
+    font-size: 2rem;
+    color: var(--white);
+  }
+}
