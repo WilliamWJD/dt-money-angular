@@ -7,11 +7,11 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
   templateUrl: './input.component.html',
   styleUrl: './input.component.scss',
   providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => InputComponent),
-      multi: true
-    }
+    // {
+    //   provide: NG_VALUE_ACCESSOR,
+    //   useExisting: forwardRef(() => InputComponent),
+    //   multi: true
+    // }
   ]
 })
 export class InputComponent {

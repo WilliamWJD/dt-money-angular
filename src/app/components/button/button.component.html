@@ -1,1 +1,10 @@
-<button class="button-submit">{{title()}}</button>
+<button class="button" [ngClass]="variant ? 'button-variant' : 'button-submit'">
+  @if (icon){
+    <div class="button-icon">
+      <img src="{{icon}}" alt="">
+      {{ title }}
+    </div>
+  } @else {
+    {{ title }}
+  }
+</button>

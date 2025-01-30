@@ -1,11 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component, input, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-  title = input<string>('Button');
+  @Input() title: string = 'Button';
+  @Input() variant: boolean = false;
+  @Input() icon: string = '';
 }

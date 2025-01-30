@@ -1,14 +1,33 @@
-.button-submit{
+.button{
   padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  background-color: var(--green);
-  color: var(--white);
   font-weight: bold;
   font-size: 1rem;
+  border-radius: 6px;
   transition: opacity 0.2s ease-in-out;
 
   &:hover{
     opacity: 0.7;
   }
+
+  .button-icon{
+    display: flex;
+    align-items: center;
+
+    img{
+      margin-right: 0.75rem;
+    }
+  }
+}
+
+.button-submit{
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.button-variant{
+  background-color: var(--gray2);
+  border: 0;
+  border: 1px solid var(--green-search);
+  color: var(--green-search);
 }
