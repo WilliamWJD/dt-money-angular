@@ -5,3 +5,21 @@ $prefix: "mo-";
 
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+:root {
+  --green-dark: #015F43;
+  --green: #00875F;
+  --green-light: #00837E;
+  --red-dark: #AA2834;
+  --red: #F75A68;
+
+  // Cores base
+  --gray1: #121214;
+  --gray2: #202024;
+  --gray3: #29292E;
+  --gray4: #323238;
+  --grays-placeholder: #7C7C8A;
+  --grays-texto-base: #C4C4CC;
+  --gray7: #E1E1E6;
+  --white: #FFFFFF;
+}
