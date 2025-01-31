@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { InputComponent } from '../../components/input/input.component';
 import { ButtonComponent } from '../../components/button/button.component';
-import { Transaction } from '../../services/transaction';
-import { TransactionService } from '../../services/transactioService.service';
+import { Transaction } from '../../services/transactions/transaction';
 import { CommonModule } from '@angular/common';
+import { TransactionService } from '../../services/transactions/transactioService.service';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   constructor(private transactionService: TransactionService) {}
 
   ngOnInit() {
-    this.transactionService.getTransactions().subscribe({
+    this.transactionService.getAllTransactions().subscribe({
       next: (transactions: Transaction[]) => {
         this.transactions = transactions;
         console.log(transactions)
