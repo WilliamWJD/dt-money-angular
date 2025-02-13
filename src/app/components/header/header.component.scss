@@ -31,30 +31,3 @@ header{
   }
 }
 
-.modalBackground{
-  background-color: rgb(0, 0, 0, 0.3);
-}
-
-.modalDtMoney{
-  background-color: var(--gray2);
-
-  .modalDtMoneyTitle{
-    color: var(--white);
-  }
-}
-
-.modalHeader{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
-
-  h5{
-    color: var(--white);
-  }
-
-  .modalDtMoneyButtonClose{
-    color: white;
-  }
-}

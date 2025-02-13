@@ -1,0 +1,30 @@
+<!-- Modal -->
+<div
+  class="modal fade modalBackground"
+  id="myModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modalDtMoney">
+      <div class="modalHeader">
+        <h5 class="modal-title" id="exampleModalLabel">Nova transação</h5>
+        <button
+          type="button"
+          class="btn-close modalDtMoneyButtonClose"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modalForm">
+        <app-input placeholder="Descrição" />
+        <app-input placeholder="Preço R$"/>
+        <app-input placeholder="Categoria"/>
+
+        <app-button  [title]="'Cadastrar'"></app-button>
+      </div>
+    </div>
+  </div>
+</div>
